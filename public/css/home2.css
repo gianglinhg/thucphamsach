@@ -1,0 +1,183 @@
+
+
+/* css phần home picture */
+.homePicture{
+    height: 70vh;
+}
+.homePicture img{
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* ======================= */
+
+.cate-list{
+   height: max-content;
+}
+.cate-list__slide{
+    padding: 20px 10px;
+}
+.swiper-wrapper.cate{
+    padding: 20px 0px;
+}
+.swiper-slide.cate{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 9px 15px 0px rgba(0 ,0, 0,5%);
+}
+
+.cate-item__image{
+    /* position: relative; */
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 400ms linear;
+
+   
+
+}
+.cate-item:hover .cate-item__image{
+    transform: translateY(6px);
+    box-shadow: 0px 9px 15px 0px rgba(0 ,0, 0,5%);
+    transition: all 400ms linear;
+}
+.cate-item__image img{
+    width: 100%;
+    height: 100%;
+}
+.slide-text{
+    font-size: 16px;
+}
+.slide-text:hover{
+    color: var(--yellow-color);
+}
+
+/* PHẦN CSS CHO ƯU ĐÃI TRONG TUẦN */
+.category-discount{
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #de2828;
+    margin: 40px auto;
+    margin-top: 60px;
+    padding: 10px;
+    padding-top: 0;
+}
+.category-discount__title{
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+     
+    
+}
+.category-discount__title img{
+    width: 30px;
+    height: 30px;
+}
+.box{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     width: max-content;
+     text-align: center;
+    padding:20px 30px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0px 0px 17px 8px rgb(0 0 0 / 5%)
+}
+.category-discount__title h4{
+    margin: 0;
+}
+.category-discount .product-cart{
+    border-color: transparent #ccc transparent transparent;
+    border-radius: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-category {
+    display: grid;
+    grid-template-columns: 24% 76%;
+    margin: 30px auto;
+
+}
+.section-category.convert{
+    grid-template-columns: 76% 24%;
+}
+.category__selection{
+    margin-right: 20px;
+}
+.section-category.convert .category__selection{
+    margin: 0;
+    margin-left: 20px;
+
+}
+
+.category__slide {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .homePicture{
+        height: 20vh;
+    }
+    .section-category{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .section-category.convert{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .category__selection{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .section-category.convert .category__selection{
+        margin: 0;
+    
+    }
+    .discont-area{
+        padding:0  10px;
+    }
+     .Advertise{
+         padding-left: 10px;
+     }
+    .homeSwiperAdvertise {
+        padding: 10px;
+    }
+    .cate-list{
+        padding: 0 10px;
+    }
+
+}

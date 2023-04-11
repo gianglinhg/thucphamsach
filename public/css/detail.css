@@ -1,0 +1,380 @@
+.info-product {
+    margin: 30px 0;
+    min-height: 300px;
+}
+
+.grid_columns.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 35%;
+    height: auto;
+    padding: 10px;
+    /* background: #3ba66b; */
+
+}
+
+.product-image .setLikeList {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+/* Phần hiển thị thông tin chi tiết  */
+.product-detail {
+    width: 40%;
+    padding: 10px;
+    /* background: red; */
+}
+
+
+.product-detail .name {
+    font-size: 22px;
+}
+
+.product-detail .price span::after {
+    content: "đ";
+}
+
+.product-detail p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.product-detail .price .price-new {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--red-color);
+    margin-right: 3px;
+}
+
+.product-detail .price.price-old {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+.product-detail .price.price-old.o{
+    display: none;
+}
+
+.product-detail .price.price-save {
+    font-weight: 600;
+}
+.save-line.o{
+    display: none;
+}
+
+:is(.product-detail .weight, #form-add) label {
+    width: 100%;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.product-detail .weight button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-amount {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.form-amount input {
+    width: 60px;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-amount .btn-amount {
+    width: 30px;
+    height: 100%;
+    border: none;
+    outline: none;
+
+}
+
+#form-add .btnOrder-now {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--white-color);
+    background: var(--red-color);
+
+    border-radius: 20px;
+}
+
+#form-add .btn-addToCart {
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-radius: 20px;
+
+}
+#form-add .btn-addToCart:hover,
+#form-add .btnOrder-now:hover{
+    background: var(--yellow-color);
+}
+
+/* hiện thị thông tin xác nhân */
+.product-certification {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+}
+
+.certification-icon {
+    margin-bottom: 10px;
+}
+
+.certification-txt {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Phần viết thanh hiển thị giới thiệu sản phẩm và chính sách */
+.nav.nav-tabs.detail {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.nav .nav-item {
+    width: 200px;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.nav .nav-item:nth-child(1) {
+    border-top-left-radius: 20px;
+}
+
+.nav .nav-item:nth-child(3) {
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.nav .nav-item .nav-link {
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.nav .nav-item .nav-link.active {
+    background: var(--yellow-color);
+    transform: scale(1);
+}
+
+.tab-content.detail {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 40px;
+
+}
+
+.tab-pane.container {
+    padding: 0;
+    /* margin: 0; */
+}
+
+.tab-content.detail p {
+    margin: 0;
+    text-align: justify;
+    font-size: 15px;
+    transition: all 5s;
+}
+/* CSS PHẦN ĐÁNH GIÁ CỦA MỌI NGƯỜI */
+.ratting-info{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.ratting-info .amount-rate{
+    color: var(--white-color);
+    background: #fd4;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+.everyOneRate{
+    display: flex;
+    transform: rotateY(180deg);
+    text-align: right;
+    justify-content: flex-end;
+}
+.everyOneRate input{
+    display: none;
+}
+.everyOneRate label{
+    padding: 0 4px;
+    margin: 0;
+}
+.everyOneRate label:last-child{
+    padding: 0;
+}
+.everyOneRate input:checked ~ label{
+    color:#fd4 ;
+}
+/* PHÂN ĐÁNH GIÁ SẢN PHẨM  */
+.ratting-area {
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info_rate{
+    flex-wrap: wrap;
+    display: none;
+}
+.info_rate.active{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ratting-area .info_rate .text{
+    font-size: 16px;
+    color: transparent;
+    font-weight: 600;
+    -webkit-text-stroke: 0.8px #03914f;
+    text-transform: uppercase;
+}
+.ratting-area .info_rate .text strong{
+    word-spacing:0.5px;
+    -webkit-text-stroke: 1px var(--yellow-color);
+    
+}
+.ratting-area .info_rate .edit{
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--yellow-color);
+    cursor: pointer;
+}
+.ratting-area #form-reason-rate{
+    display: none;
+}
+input:checked ~ #form-reason-rate{
+    display: block;
+}
+.star-widget{
+    transform: rotateY(180deg);
+    text-align: right;
+    display: none;
+}
+.star-widget.active{
+    display: block;
+}
+.ratting-area .star-widget input{
+    display: none;
+}
+.star-widget label{
+    font-size: 22px;
+    color: #444;
+    transition: all 0.2s linear;
+}
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+    color:#fd4 ;
+}
+.star-widget input:checked ~ label{
+    color:#fd4 ;
+}
+.star-widget input#rate-5:checked ~ label{
+    color:#fe7 ;
+    text-shadow:0 0 20px #952 ;
+}
+#form-reason-rate{
+    display: none;
+}
+#form-reason-rate.active{
+    display: block;
+}
+#form-reason-rate .textarea{
+    width: 100%;
+}
+#form-reason-rate .textarea .reason-rate{
+    width: 100%;
+    outline: none;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #fe4;
+    background: transparent;
+    font-size: 17px;
+    resize: none;
+}
+#form-reason-rate .btn-rate{
+    height: 36px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin: 15px 0;
+}
+#form-reason-rate .btn-rate button{
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* thực hiện reponsive cho trang detail */
+@media only screen and (max-width: 600px){
+  .product-image{
+      width: 100%;
+  }
+  .grid_columns.product{
+      flex-wrap: wrap;
+  }
+  .product-detail{
+      width: 100%;
+  }
+  .product-certification{
+      display: none;
+  }
+  .nav .nav-item {
+    width: 100px;
+    /* max-width: 200px; */
+    overflow: hidden;
+   }
+.grid_columns.listProduct-same{
+    width: calc(100% - 20px);
+}
+}

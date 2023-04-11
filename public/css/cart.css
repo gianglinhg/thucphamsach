@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+  }
+  
+  .cart {
+    font-family: system-ui;
+    width: 75%;
+    margin: 50px auto 0;
+  }
+  .cart h1 {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+  .cart h1 span {
+    font-size: 14px;
+  }
+  
+  .item {
+    display: flex;
+    border: 1px solid #f5f5f5;
+  }
+  .item__image, .item__info {
+    margin: 20px;
+  }
+  .item:not(:last-child) {
+    border-bottom: 0px;
+  }
+  .item__image {
+    max-width: 150px;
+    height: 150px;
+    float: left;
+    object-fit: contain;
+  }
+  .item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+  }
+  .item__info--description .name {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .item__info--description .brand {
+    color: #a9a9a9;
+    font-size: 13px;
+  }
+  .item__info--description .delete a {
+    color: #3ba66b;
+    text-decoration: underline;
+  }
+  .item__info--description .delete a:hover {
+    text-decoration: none;
+  }
+  .item__info--price {
+    color: #eb3b32;
+    font-weight: 700;
+  }
+  .item__info--quantity {
+    display: flex;
+  }
+  .item__info--quantity * {
+    border: none;
+    height: 25px;
+    background-color: white;
+    border: 0.25px solid #ebebeb;
+  }
+  .item__info--quantity .action-button {
+    width: 25px;
+  }
+  .item__info--quantity .output {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .total {
+    display: flex;
+  }
+  
+  .total-info-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .total-info-price .total-price {
+    color: #eb3b32;
+    font-size: 22px;
+  }
+  .total-info-price .temporary {
+    color: black;
+    font-size: 16px;
+  }
+  
+  .return-button {
+    font-weight: 700;
+  }
+  .return-button:hover {
+    transition: 0.25s;
+    color: #f1d557;
+  }
+  
+  .purchase-button {
+    float: right;
+    background-color: #328c5a;
+    border: 1px solid #328c5a;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  .purchase-button:hover {
+    background-color: black;
+    border: 1px solid black;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  /*# sourceMappingURL=giohang.css.map */
+  

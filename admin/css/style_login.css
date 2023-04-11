@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+form {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 7%;
+    background-color: #333;
+}
+
+h2 {
+    background-color: #FF00FF;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+
+}
+
+input[type="text"],
+input[type="password"] {
+    background: url(../images/m.png)no-repeat 0px 5px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding: 12px 13px 20px 44px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 87%;
+    margin: 0 0 20px;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+}
+
+body {
+    background-image: url(../upload/a1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: antiquewhite;
+    background-color: black;
+}
+
+large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.alert-danger {
+    color: red;
+}

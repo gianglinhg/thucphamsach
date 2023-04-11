@@ -1,0 +1,87 @@
+.form-all {
+    display: flex;
+}
+
+.form-select {
+    display: grid;
+    align-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.form-top {
+    display: flex;
+}
+
+.hoten,
+.email {
+    width: 95%;
+}
+
+.input-group input {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+#loi {
+    color: red;
+}
+
+.nope {
+    padding: 20px 10px;
+    display: none;
+}
+
+.input-group {
+    padding: 15px 0px;
+}
+
+.dienthoai input {
+    width: 100%;
+}
+
+.noidung textarea {
+    height: 150px;
+}
+
+#submit {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 10px lightcyan;
+}
+
+#submit:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px 10px rgba(211, 211, 211, 0.534);
+}
+
+.thongtin {
+    padding-top: 20px;
+}
+
+.thongtin h5 {
+    color: var(--black-color);
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: 800;
+    padding: 0px 0px 10px 0px;
+}
+
+.thongtin p {
+    font-size: 18px;
+    width: 90%;
+    text-align: justify;
+    padding: 10px 0px;
+}

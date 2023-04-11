@@ -1,0 +1,88 @@
+.error {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.accordion_a {
+    background-color: #404E67;
+    color: #C9CACE;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    padding: 20px 30px;
+}
+
+.accordion_a :before {
+    font-size: 1.4em;
+    line-height: 0.5em;
+    float: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion_a:hover {
+    background: #444;
+}
+
+.button_click .accordion_a::before {
+    content: "+";
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(-18%);
+}
+
+.button_click .accordion_a.active::before {
+    content: "_";
+    font-size: 2rem;
+    transform: translateY(-60%);
+
+}
+
+.form-control {
+    width: 100%;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #ccc
+}
+
+.button_click .accordion_a.active a i {
+    padding-right: 100px;
+}
+
+.pagination {
+    padding: 15px 20px;
+    color: #222;
+}
+
+.pagination .page-link {
+    border: 1px solid #808080;
+    padding: 15px 20px;
+    color: #222;
+}
+
+.pagination .page-link:hover {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+.pagination .page-link.active{
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin-left: 20px;  
+    box-sizing: border-box;
+    /* padding: 0; */
+}
+label {
+    font-weight: bold;
+    /* font-size: 15px; */
+}
